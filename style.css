@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+
+    font-family: "Poppins", sans-serif;
+    background-color: deepskyblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centered-alert {
+    width: 300px;
+    height: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: azure;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    font-weight: 600;
+    z-index: 1000;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.centered-alert button{
+    background-color: #5372F0;
+    color: white;
+    
+    margin-top: 20px;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+
+    background-color: azure;
+    padding: 20px;
+}
+
+.container h3{
+    padding: 18px 0px;
+    font-size: 32px;
+    font-weight: 400;
+    border-bottom: 2px solid slategrey;
+}
+
+.inner-cont{
+    margin: 25px  0px 35px;
+}
+
+.word{
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 14px;
+    text-transform: uppercase;
+}
+.details{
+    margin: 25px 0px 20px;
+}
+
+.details p{
+    font-size: 17px;
+    margin-bottom: 10px;
+
+    font-weight: 400;
+}
+
+.details p b{
+    font-weight: 500;
+}
+
+
+input{
+    width: calc(100% - 21px);
+    height: 60px;
+
+    margin: 10px -1px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-left: 20px;
+    outline: none;
+    font-size: 20px;
+
+    background-color: rgb(222, 222, 221);
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 15px 0;
+    font-size: 17px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    width: calc(100% / 2 - 8px);
+    cursor: pointer;
+}
+
+.refresh{
+    background-color: dimgrey;
+}
+
+.check-word{
+    background-color: #4CAF50;
+}
